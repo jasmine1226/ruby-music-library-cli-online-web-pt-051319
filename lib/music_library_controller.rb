@@ -92,3 +92,5 @@ class MusicLibraryController
   end
 
 end
+
+test = MusicLibraryController.new
