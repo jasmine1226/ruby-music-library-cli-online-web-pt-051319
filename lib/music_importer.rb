@@ -1,3 +1,8 @@
+require_relative './artist.rb'
+require_relative './song.rb'
+require_relative './genre.rb'
+require_relative './music_library_controller.rb'
+
 class MusicImporter
   attr_reader :path
 
