@@ -24,8 +24,8 @@ class MusicLibraryController
   end
 
   def list_songs
-    puts ">> org."
-    puts Song.all
+    songs = Song.all
+    binding.pry
     songs = Song.all.sort_by(&:name)
     puts ">> sorted"
     puts songs
