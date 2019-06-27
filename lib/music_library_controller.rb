@@ -31,9 +31,9 @@ class MusicLibraryController
     songs.each_with_index do |song, i|
       names << song.name
     end
-    binding.pry
+    #binding.pry
     songs = Song.all.sort_by(&:name)
-    binding.pry
+    #binding.pry
     songs.each_with_index do |song, i|
       puts "#{i+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end
