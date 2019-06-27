@@ -69,7 +69,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
     Song.all.sort_by(&:name).each do |song, i|
-      puts "#{i+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+      puts "i = #{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end
     song = Song.all.sort_by(&:name)[input+1]
     puts songs
