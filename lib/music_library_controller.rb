@@ -1,4 +1,9 @@
 require 'pry'
+require_relative './artist.rb'
+require_relative './song.rb'
+require_relative './genre.rb'
+require_relative './music_importer.rb'
+
 
 class MusicLibraryController
   attr_accessor :path, :last_list
