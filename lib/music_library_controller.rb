@@ -7,6 +7,7 @@ class MusicLibraryController
     @path = path
     music_importer = MusicImporter.new(path)
     music_importer.import
+    @last_list = []
   end
 
   def call
@@ -28,6 +29,7 @@ class MusicLibraryController
   def list_songs
     Song.all.sort_by(&:name).each_with_index do |song, i|
       puts "#{i+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+      @last_list <<
     end
   end
 
