@@ -67,7 +67,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
-    song = @last_list[input]
+    song = @last_list[input+1]
     puts "Playing #{song.name} by #{song.artist.name}" if input <= @last_list.length
   end
 end
