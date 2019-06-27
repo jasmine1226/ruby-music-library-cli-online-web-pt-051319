@@ -92,5 +92,3 @@ class MusicLibraryController
   end
 
 end
-
-MusicLibraryController.new('./db/mp3s')
