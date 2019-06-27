@@ -51,4 +51,8 @@ class MusicLibraryController
       puts "#{i+1}. #{song.name} - #{song.genre.name}"
     end
   end
+
+  def list_songs_by_genre
+    
+  end
 end
