@@ -1,4 +1,8 @@
 require_relative './concerns/findable.rb'
+require_relative './artist.rb'
+require_relative './genre.rb'
+require_relative './music_importer.rb'
+require_relative './music_library_controller.rb'
 
 class Song
   extend Concerns::Findable
