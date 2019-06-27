@@ -93,4 +93,4 @@ class MusicLibraryController
 
 end
 
-test = MusicLibraryController.new'./db/mp3s'
+MusicLibraryController.new'./db/mp3s'
