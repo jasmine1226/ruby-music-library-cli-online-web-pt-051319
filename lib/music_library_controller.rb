@@ -51,6 +51,7 @@ class MusicLibraryController
     artist = Artist.find_by_name(input)
     Song.all.select{|song| song.artist==artist}.sort_by(&:name).each_with_index do |song, i|
       puts "#{i+1}. #{song.name} - #{song.genre.name}"
+      @last_list << song
     end
   end
 
