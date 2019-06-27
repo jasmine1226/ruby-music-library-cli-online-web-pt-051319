@@ -72,6 +72,6 @@ class MusicLibraryController
 
   #  song = Song.all.sort_by(&:name)[input+1]
 
-    puts "Playing #{song.name} by #{song.artist.name}" if input <= @last_list.length || input <= 0
+    puts "Playing #{song.name} by #{song.artist.name}" if input <= Song.all.length || input <= 0
   end
 end
