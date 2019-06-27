@@ -72,7 +72,7 @@ class MusicLibraryController
       puts "i = #{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end
     song = Song.all.sort_by(&:name)[input+1]
-    puts songs
+
     puts "Playing #{song.name} by #{song.artist.name}" if input <= @last_list.length || input <= 0
   end
 end
