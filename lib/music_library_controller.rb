@@ -28,8 +28,12 @@ class MusicLibraryController
         self.list_songs
       when "list artists"
         self.list_artists
+        artist = gets.strip
+        self.list_songs_by_artist(artist)
       when "list genres"
         self.list_genres
+        genre = gets.strip
+        self.list_songs_by_genre(genre)
       when "play song"
         self.play_song
       end
