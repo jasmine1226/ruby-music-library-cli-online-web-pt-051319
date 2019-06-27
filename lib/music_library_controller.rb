@@ -72,4 +72,5 @@ class MusicLibraryController
     song = songs[input-1]
     puts "Playing #{song.name} by #{song.artist.name}" if input <= Song.all.length && input > 0
   end
+
 end
