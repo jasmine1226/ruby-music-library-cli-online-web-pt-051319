@@ -9,7 +9,7 @@ class MusicLibraryController
   end
 
   def call
-    input = nil
+    input = ""
     until input == "exit" do
       puts "Welcome to your music library!"
       puts "To list all of your songs, enter 'list songs'."
@@ -20,7 +20,7 @@ class MusicLibraryController
       puts "To play a song, enter 'play song'."
       puts "To quit, type 'exit'."
       puts "What would you like to do?"
-#      input = gets.strip
+      input = gets.strip
     end
   end
 end
