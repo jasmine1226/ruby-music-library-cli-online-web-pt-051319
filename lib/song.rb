@@ -64,6 +64,6 @@ class Song
 
   def self.create_from_filename(file)
     song = Song.new_from_filename(file)
-    self.all << song
+    self.all << song if self.all.include?(song)==nil
   end
 end
